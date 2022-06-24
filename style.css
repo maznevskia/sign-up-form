@@ -101,9 +101,12 @@ table {
 }
 
 #middle {
-	display: flex;
-	flex-wrap: wrap;
+	margin: 0 1rem;
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+	grid-gap: 2rem;
 	height: 30vh;
+	align-items: center;
 }
 
 input, label {
@@ -112,6 +115,4 @@ input, label {
 
 input {
 	font-size: 2vh;
-	height: 2vh;
-	width: 15vw;
 }
