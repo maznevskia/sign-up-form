@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
     <script src="https://kit.fontawesome.com/249afc4e5f.js" crossorigin="anonymous"></script>
-    <script src="script.js"></script>
+    <script src="script.js" defer></script>
     <title>Sign Up Form</title>
 </head>
 <body>
@@ -16,7 +16,7 @@
             <p>Odin</p>
         </div>
     </div>
-    <div id="form">
+    <div id="signUp">
         <div id="top">
             <p>This is not a real online service! You know you need something
                 like this in your life to help you realize your deepest dreams. 
@@ -24,49 +24,49 @@
             <p>
                 Sign up now to get started</p>
         </div>
-        <form>
+        <form id="form" novalidate>
             <div id="middle">
-                <div class="field success">
+                <div class="field">
                     <label for="firstName">First Name</label>
                     <input type="text" id="firstName" name="first_name" required>
                     <i class="fa-solid fa-check-circle"></i>
                     <i class="fa-solid fa-exclamation-circle"></i>
-                    <small>Error message</small>
+                    <small></small>
                 </div>
-                <div class="field error">
+                <div class="field">
                     <label for="lastName">Last Name</label>
                     <input type="text" id="lastName" name="last_name" required>
                     <i class="fa-solid fa-check-circle"></i>
                     <i class="fa-solid fa-exclamation-circle"></i>
-                    <small>Error message</small>
+                    <small></small>
                 </div>
                 <div class="field">
                     <label for="email">Email Adress</label>
                     <input type="email" id="email" name="email_adress" required>
                     <i class="fa-solid fa-check-circle"></i>
                     <i class="fa-solid fa-exclamation-circle"></i>
-                    <small>Error message</small>
+                    <small></small>
                 </div>
                 <div class="field">
                     <label for="phoneNumber">Phone Number</label>
                     <input type="tel" id="phoneNumber" name="phone_number" required>
                     <i class="fa-solid fa-check-circle"></i>
                     <i class="fa-solid fa-exclamation-circle"></i>
-                    <small>Error message</small>
+                    <small></small>
                 </div>
                 <div class="field">
                     <label for="password">Password</label>
                     <input type="password" id="password" name="password" required>
                     <i class="fa-solid fa-check-circle"></i>
                     <i class="fa-solid fa-exclamation-circle"></i>
-                    <small>Error message</small>
+                    <small></small>
                 </div>
                 <div class="field">
                     <label for="confirmPassword">Confirm Password</label>
                     <input type="password" id="confirmPassword" name="confirm_password" required>
                     <i class="fa-solid fa-check-circle"></i>
                     <i class="fa-solid fa-exclamation-circle"></i>
-                    <small>Error message</small>
+                    <small></small>
                 </div>
             </div>
             <div id="bottom">
