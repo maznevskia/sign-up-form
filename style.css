@@ -122,7 +122,6 @@ table {
 label{
     display: inline-block;
 	font-size: 1.5rem;
-	/* margin-bottom: 5px; */
 }
 
 input {
@@ -143,4 +142,27 @@ input {
 
 .field small {
 	visibility: hidden;
+}
+
+.success input {
+	border-color: #2ecc71;
+}
+
+.success i.fa-check-circle {
+	color: #2ecc71;
+	visibility: visible;
+}
+
+.error input {
+	border-color: #e74c3c;
+}
+
+.error i.fa-exclamation-circle {
+	color: #e74c3c;
+	visibility: visible;
+}
+
+.error small {
+	color: #e74c3c;
+	visibility: visible;
 }
