@@ -99,6 +99,10 @@ function checkInputs() {
     } else {
         setSuccessFor(confirmPassword);
     }
+
+    if (focus == 0) {
+        window.location.reload();
+    } 
 }
 
 function setErrorFor(input, message) {
