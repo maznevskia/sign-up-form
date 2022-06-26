@@ -166,3 +166,39 @@ input {
 	color: #e74c3c;
 	visibility: visible;
 }
+
+#bottom {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+#bottom > *{
+	position: relative;
+	top: 10%;
+}
+
+#bottom button {
+	width: 40%;
+	height: 3rem;
+	margin-bottom: 1rem;
+	justify-content: center;
+	align-items: center;
+	font-size: 2rem;
+	background-image: url(./images/background.webp);
+	border: 1px solid black;
+	border-radius: 1rem;
+}
+
+#bottom button:hover {
+	transform: scale(101%);
+	transition: 0.1s;
+}
+
+#bottom p {
+	font-size: 1.25rem;
+}
+
+#bottom a {
+	color: rgba(145,211,241,255);
+}
