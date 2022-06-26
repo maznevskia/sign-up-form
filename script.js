@@ -20,44 +20,82 @@ function checkInputs() {
     const passwordValue = password.value.trim();
     const confirmPasswordValue = confirmPassword.value.trim();
 
+    let focus = 0;
+
     if (firstNameValue === '') {
         setErrorFor(firstName, 'First Name cannot be blank');
+        if (focus == 0) {
+            firstName.focus();
+            focus = 1;
+        }
     } else {
         setSuccessFor(firstName);
     }
 
     if (lastNameValue === '') {
         setErrorFor(lastName, 'Last Name cannot be blank');
+        if (focus == 0) {
+            lastName.focus();
+            focus = 1;
+        }
     } else {
         setSuccessFor(lastName);
     }
 
     if (emailValue === '') {
         setErrorFor(email, 'Email cannot be blank');
+        if (focus == 0) {
+            email.focus();
+            focus = 1;
+        }
     } else if (!isEmail(emailValue)){
         setErrorFor(email, 'Email is not valid');
+        if (focus == 0) {
+            email.focus();
+            focus = 1;
+        }
     } else {
         setSuccessFor(email);
     }
 
     if (phoneNumberValue === '') {
         setErrorFor(phoneNumber, 'Phone Number cannot be blank');
+        if (focus == 0) {
+            phoneNumber.focus();
+            focus = 1;
+        }
     } else if (!isPhoneNumber(phoneNumberValue)) {
         setErrorFor(phoneNumber, 'Invalid Phone Number');
+        if (focus == 0) {
+            phoneNumber.focus();
+            focus = 1;
+        }
     } else {
         setSuccessFor(phoneNumber);
     }
 
     if (passwordValue === '') {
         setErrorFor(password, 'Password cannot be blank');
+        if (focus == 0) {
+            password.focus();
+            focus = 1;
+        }
     } else {
         setSuccessFor(password);
     }
 
     if (confirmPasswordValue === '') {
         setErrorFor(confirmPassword, 'Confirm Password cannot be blank');
+        if (focus == 0) {
+            confirmPassword.focus();
+            focus = 1;
+        }
     } else if ( passwordValue != confirmPasswordValue ) {
         setErrorFor(confirmPassword, 'Passwords don\'t match');
+        if (focus == 0) {
+            confirmPassword.focus();
+            focus = 1;
+        }
     } else {
         setSuccessFor(confirmPassword);
     }
