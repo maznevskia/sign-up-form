@@ -5,7 +5,9 @@
 
 @import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700;800&display=swap");
 
-
+.github:before {
+    content: "\f09b";
+}
 
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
@@ -201,4 +203,29 @@ input {
 
 #bottom a {
 	color: rgba(145,211,241,255);
+}
+
+.footer {
+	color: white;
+	background-color: black;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    width: 100%;
+    padding: 15px;
+    font-size: 20px;
+}
+  
+.github {
+	color: white;
+    font-size: 24px;
+    transition: transform 0.3s ease-in-out;
+}
+  
+.github:hover {
+    transform: rotate(360deg) scale(1.2);
 }
